@@ -1,0 +1,1 @@
+<?= Framework::Render_Content(); ?>

@@ -1,0 +1,88 @@
+body {
+    background: #074e68 !important;
+}
+
+.r_a {
+    max-width: 100% !important;
+}
+
+#canvas_box {
+    height: 95%;
+    padding: 0px !important;
+    margin: 20px 20px 20px 20px !important;
+    background:#074e68 !important;
+    overflow: hidden;
+}
+#app_canvas{
+    margin: 0;
+    padding:0;
+    border:none;
+    width:100%;
+    height: 100%;
+    overflow: hidden;background: white;
+    position: relative;
+}
+.top-bar {
+    position: fixed !important;
+    width: 100%;
+}
+
+.l_a {
+    background: #eee !important;
+    padding: 0 !important;
+}
+
+.l_b {
+    padding: 0 !important;
+    height: 100%;
+    padding-top: 0px !important;
+}
+
+.s_a {
+    background: #eee !important;
+    height: 100%;
+}
+
+.side-nav {
+    overflow-y: scroll !important;
+    height: 90% !important;
+}
+
+.l_c {
+    padding: 0 !important;
+    height: 100%;
+}
+
+.s_b {
+    background: #eee !important;
+    overflow-y: scroll;
+    height:100%;
+    padding: 30px !important;
+}
+
+::-webkit-scrollbar {
+    width:0px !important;
+}
+
+.app-grid, .vertical-grid-app-builder{
+    position: absolute;
+    padding:0;
+    margin: 0;
+    border-top: 1px dashed lightgray;
+    border-left: 1px dashed lightgray;
+}
+
+.highlighted_grid{
+    background:rgb(218, 242, 250);
+}
+
+.app_builder_canvas_element{
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.highlighted_canvas_element{
+    border: 4px solid red !important;
+    box-shadow: 5px 5px 12px 2px gray;
+    overflow: hidden;
+}

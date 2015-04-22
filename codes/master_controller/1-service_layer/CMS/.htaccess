@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule !\.(js|gif|jpg|png|css|txt|xml|ico|swf|xhtml|svg)$ public/index.php [L]
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_URI} !^/public/azexo_composer/
+RewriteCond %{REQUEST_URI} !phpmyadmin
+RewriteCond %{REQUEST_URI} !etc
+RewriteRule ^(.*)$ /public/$1 [L]
+
