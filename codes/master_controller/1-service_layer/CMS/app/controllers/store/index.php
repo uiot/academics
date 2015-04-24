@@ -1,2 +1,0 @@
-<?php
-$store = new StoreHandler();

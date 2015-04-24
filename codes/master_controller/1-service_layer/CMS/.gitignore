@@ -1,9 +1,0 @@
-.DS_Store
-.idea/*
-app/.DS_Store
-etc/xml/devices/*
-etc/xml/services/*
-PHP_errors.log
-sqldialects.xml
-.idea
-config/config.ini
