@@ -1,0 +1,120 @@
+\documentclass{sbrt2016port}
+
+\begin{document}
+
+\title{Como usar o estilo sbrt2016port.cls}
+
+\author{Autor 1 e Autor 2
+\thanks{Autor 1 e Autor 2¸
+Departamento de Engenharia Elétrica, Universidade Federal de Lugar, Cidade-PA, Brasil, E-mails: author1@ufpp.br, author2@ufp.br. Este trabalho foi parcialmente financiado pelo CNPq (XX/XXXXX-X).} }
+
+\maketitle
+
+\markboth{XXXIV SIMPÓSIO BRASILEIRO DE TELECOMUNICAÇÕES - SBrT2016, 30 DE AGOSTO A 02 DE SETEMBRO, SANTARÉM, PA} {XXXIV SIMPÓSIO BRASILEIRO DE TELECOMUNICAÇÕES - SBrT2016, 30 DE AGOSTO A 02 DE SETEMBRO, SANTARÉM, PA}
+
+\begin{resumo}
+Este artigo apresenta um exemplo de utilização de um estilo \LaTeX\ que produz uma boa aproximação do estilo \textit{IEEEtran.cls} adotado nas conferências do IEEE. O objetivo
+é preparar a versão final do artigo aceito para publicação nos Anais do XXXIV Simpósio Brasileiro de Telecomunicações - SBrT2016. O artigo é um exemplo de uso com o estilo sbrt2016.cls.
+\end{resumo}
+
+\begin{chave}
+Arquivo de estilo, \LaTeX, SBrT2016, \textit{IEEE Conference style}.
+\end{chave}
+
+\begin{abstract}
+This article is an example of how to use a \LaTeX\  style to prepare the final or camera-ready version to appear in the Proceedings of the XXXIV Simpósio Brasileiro de Telecomunicações - SBrT2016.
+The sbrt2016.cls style is based on the IEEEtran.cls.
+\end{abstract}
+
+\begin{keywords}
+Style file, \LaTeX, SBrT2016, IEEE Conference style.
+\end{keywords}
+
+\section{Introdução}
+O XXXIV Simpósio Brasileiro de Telecomunicações (SBrT2016) é organizado pela Sociedade Brasileira de Telecomunicações (SBrT).
+
+\subsection{Sobre o Simpósio}
+
+Este simpósio ocorre anualmente promovendo o encontro de maior relevância nacional da área de telecomunicações em que são discutidos temas de primordial importância para a evolução da
+pesquisa e do desenvolvimento deste setor.
+
+
+\section{Figuras e Tabelas}
+A Tabela \ref{tabela} é apenas um exemplo \cite{ref2}.
+\begin{table}[htb]
+\caption{\label{tabela}O \textit{caption} vem antes da tabela.}
+\begin{center}
+{\tt
+\begin{tabular}{|c||c|c|c|}\hline
+&title page&odd page&even page\\\hline\hline
+onesided&leftTEXT&leftTEXT&leftTEXT\\\hline
+twosided&leftTEXT&rightTEXT&leftTEXT\\\hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+A Figura \ref{figura} é apenas um exemplo \cite{ref2}.
+
+\begin{figure}[hbt]
+\begin{center}
+\setlength{\unitlength}{0.0105in}%
+\begin{picture}(242,156)(73,660)
+\put( 75,660){\framebox(240,150){}} \put(105,741){\vector( 0, 1){
+66}} \put(105,675){\vector( 0, 1){ 57}} \put( 96,759){\vector( 1,
+0){204}} \put(105,789){\line( 1, 0){ 90}} \put(195,789){\line(
+2,-1){ 90}} \put(105,711){\line( 1, 0){ 60}} \put(165,711){\line(
+5,-3){ 60}} \put(225,675){\line( 1, 0){ 72}} \put(
+96,714){\vector( 1, 0){204}} \put(
+99,720){\makebox(0,0)[rb]{\raisebox{0pt}[0pt][0pt]{a}}}
+\put(291,747){\makebox(0,0)[lb]{\raisebox{0pt}[0pt][0pt]{ o}}}
+\put(291,702){\makebox(0,0)[lb]{\raisebox{0pt}[0pt][0pt]{ o}}}
+\put( 99,795){\makebox(0,0)[rb]{\raisebox{0pt}[0pt][0pt]{ $M$}}}
+\end{picture}
+\end{center}
+\caption{\label{figura}Esta figura é apenas um exemplo. O
+\textit{caption} deve vir após a figura.}
+\end{figure}
+
+\section{Equações e teoremas}
+
+\begin{theorem}[Nome do Teorema]
+Considere o sistema
+\begin{equation}
+\begin{array}{rrr}
+\dot x&=&A.x+B.u\\[2mm] y&=& C.x+D.u
+\end{array}
+\end{equation}
+\begin{equation}
+\left[\begin{array}{c|c}    A & b_1 \\ \hline    c & d_1
+\end{array}\right]\quad{\hbox{e}}\quad\left[\begin{array}{c|c}
+A & b_2 \\ \hline    c & d_2  \end{array}\right].
+\end{equation}
+Se $A$ for estável, então o par $\{A,B\}$ é estabilizável e isso
+se mantém para qualquer $B$.
+\end{theorem}
+\begin{proof}
+A demonstração deste teorema é trivial e é deixada para os
+leitores interessados.
+\end{proof}
+
+\section{Conclusões}
+O formato do artigo deve ser A4, coluna-dupla, 10pt, lado-único, e possuir no máximo 05 páginas. O Resumo e Abstract devem ter no máximo 100 palavras cada um.
+
+\section*{Agradecimentos}
+A Coordenação Técnica do SBrT2016 agradece as coordenações dos simpósios anteriores promovidos pela Sociedade Brasileira de Telecomunicações por possibilitarem a disponibilização deste exemplo.
+
+\begin{thebibliography}{99}
+\bibitem{ref1} L. Lamport, \textit{A Document Preparation System: \LaTeX, User's
+Guide and Reference Manual}. Addison Wesley Publishing Company,
+1986.
+\bibitem{ref2} F. C. Silva e J. J. Sousa, ``Esta referência é apenas um exemplo," ~\textit{Revista de Exemplos}, v. 5, pp. 52--55, Maio
+1999.
+\end{thebibliography}
+
+
+\appendices
+\section{}
+Aqui vão informações mais apropriadas para um apêndice.
+
+\end{document}
