@@ -1,0 +1,106 @@
+\documentclass{sbrt2016eng}
+
+\begin{document}
+
+\title{How to Use Style sbrt2016eng.cls}
+
+\author{Author 1 and Author 2
+\thanks{Author 1 and Author 2¸
+Department of Electrical Engineering, University of SomePlace, City-PA, Brazil, E-mails: author1@ufpp.br, author2@ufp.br. This work was partially supported by CNPq (XX/XXXXX-X).} }
+
+\maketitle
+
+\markboth{XXXIV SIMPÓSIO BRASILEIRO DE TELECOMUNICAÇÕES - SBrT2016, AUGUST 30 TO SEPTEMBER 02, SANTARÉM, PA} {XXXIV SIMPÓSIO BRASILEIRO DE TELECOMUNICAÇÕES - SBrT2016, AUGUST 30 TO SEPTEMBER 02, SANTARÉM, PA}
+
+\begin{abstract}
+This article is an example of how to use a \LaTeX\  style to prepare the final or camera-ready version to appear in the Proceedings of the XXXIV Simpósio Brasileiro de Telecomunicações - SBrT2016.
+The sbrt2016.cls style is based on the IEEEtran.cls.
+\end{abstract}
+
+\begin{keywords}
+Style file, \LaTeX, SBrT2016, IEEE Conference style.
+\end{keywords}
+
+\section{Introduction}
+The XXXIV Simpósio Brasileiro de Telecomunicações (SBrT2016) is organized by the Brazilian Telecommunications Society (SBrT).
+
+\subsection{About the Symposium}
+
+This yearly symposium promotes the most relevant national meeting on the area of telecommunications where important themes for the evolution of research and development of the sector are discussed.
+
+
+\section{Figures and Tables}
+Table \ref{tabela} is just an example \cite{ref2}.
+\begin{table}[htb]
+\caption{\label{tabela}\textit{Caption} comes before the table.}
+\begin{center}
+{\tt
+\begin{tabular}{|c||c|c|c|}\hline
+&title page&odd page&even page\\\hline\hline
+onesided&leftTEXT&leftTEXT&leftTEXT\\\hline
+twosided&leftTEXT&rightTEXT&leftTEXT\\\hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+
+Figure \ref{figura} is just an example \cite{ref2}.
+
+\begin{figure}[hbt]
+\begin{center}
+\setlength{\unitlength}{0.0105in}%
+\begin{picture}(242,156)(73,660)
+\put( 75,660){\framebox(240,150){}} \put(105,741){\vector( 0, 1){
+66}} \put(105,675){\vector( 0, 1){ 57}} \put( 96,759){\vector( 1,
+0){204}} \put(105,789){\line( 1, 0){ 90}} \put(195,789){\line(
+2,-1){ 90}} \put(105,711){\line( 1, 0){ 60}} \put(165,711){\line(
+5,-3){ 60}} \put(225,675){\line( 1, 0){ 72}} \put(
+96,714){\vector( 1, 0){204}} \put(
+99,720){\makebox(0,0)[rb]{\raisebox{0pt}[0pt][0pt]{a}}}
+\put(291,747){\makebox(0,0)[lb]{\raisebox{0pt}[0pt][0pt]{ o}}}
+\put(291,702){\makebox(0,0)[lb]{\raisebox{0pt}[0pt][0pt]{ o}}}
+\put( 99,795){\makebox(0,0)[rb]{\raisebox{0pt}[0pt][0pt]{ $M$}}}
+\end{picture}
+\end{center}
+\caption{\label{figura}This figure us just an example. \textit{Caption} must come after the figure.}
+\end{figure}
+
+\section{Equations and Theorems}
+
+\begin{theorem}[Name of Theorem]
+Consider the system
+\begin{equation}
+\begin{array}{rrr}
+\dot x&=&A.x+B.u\\[2mm] y&=& C.x+D.u
+\end{array}
+\end{equation}
+\begin{equation}
+\left[\begin{array}{c|c}    A & b_1 \\ \hline    c & d_1
+\end{array}\right]\quad{\hbox{e}}\quad\left[\begin{array}{c|c}
+A & b_2 \\ \hline    c & d_2  \end{array}\right].
+\end{equation}
+If $A$ is stable, then the pair $\{A,B\}$ is possibly stable and this remains for any $B$.
+\end{theorem}
+\begin{proof}
+Demonstration is trivial and left to the interested readers.
+\end{proof}
+
+\section{Conclusions}
+The paper must be in A4 size, double-column, 10pt font size and with no more than 5 pages. Abstract must have at most 100 words.
+
+\section*{Acknowledgments}
+The Technical Committee of SBrT2016 would like to thank the past symposium chairs for making this template available.
+
+\begin{thebibliography}{99}
+\bibitem{ref1} L. Lamport, \textit{A Document Preparation System: \LaTeX, User's Guide and Reference Manual}. Addison Wesley Publishing Company,
+1986.
+\bibitem{ref2} F. C. Silva and J. J. Sousa, ``This reference is just an example," ~\textit{Journal of Examples}, v. 5, pp. 52--55, May 1999.
+\end{thebibliography}
+
+
+\appendix
+\section{}
+Here goes some information more suitable to an appendix.
+
+
+\end{document}

@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Related Concepts}{}% 2
+\BOOKMARK [1][-]{section.3}{Proposal}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Presentation Layer}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Routing Module}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Rendering Module}{subsection.3.1}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Input Interpreter Layer}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Input Treater}{subsection.3.2}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Resource Handler}{subsection.3.2}% 9
+\BOOKMARK [2][-]{subsection.3.3}{Business Logic Layer}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Solution Handler}{subsection.3.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Template Module}{subsection.3.3}% 12
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Solution Module}{subsection.3.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.4}{Data Collecting Module}{subsection.3.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Communication Module}{section.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Communication Engine}{subsection.3.4}% 16
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Service Communication Module}{subsection.3.4}% 17
+\BOOKMARK [2][-]{subsection.3.5}{Communication Interface}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.6}{User Experience}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{Experimental Environment and Result Analysis}{}% 20
+\BOOKMARK [1][-]{section.5}{Conclusion and Future Work}{}% 21

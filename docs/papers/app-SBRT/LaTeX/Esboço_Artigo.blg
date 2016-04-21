@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Esboço_Artigo.aux
+The style file: elsarticle-num.bst
+Database file #1: bibliographyhello.bib
+Warning--empty year in silva2016restiot
+You've used 1 entry,
+            2937 wiz_defined-function locations,
+            674 strings with 5405 characters,
+and the built_in function-call counts, 329 in all, are:
+= -- 23
+> -- 16
+< -- 0
++ -- 6
+- -- 5
+* -- 23
+:= -- 66
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 8
+empty$ -- 28
+format.name$ -- 6
+if$ -- 68
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 11
+num.names$ -- 1
+pop$ -- 8
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 16
+stack$ -- 0
+substring$ -- 16
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 3
+width$ -- 2
+write$ -- 14
+(There was 1 warning)
