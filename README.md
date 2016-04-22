@@ -1,4 +1,4 @@
-<h1>![](http://i.imgur.com/TaFqVtT.png) <sup><sup>&nbsp;academics</sup></sup><sub><sub><sup></h1></sup></sub></sub>
+<h1>![](http://i.imgur.com/TaFqVtT.png)<sup><sup>academics</sup></sup><sub><sub><sup></h1></sup></sub></sub>
 <br>
 [![ZenHub](https://img.shields.io/badge/supercharged-zenhub.io-orange.svg)](https://zenhub.io)
 
