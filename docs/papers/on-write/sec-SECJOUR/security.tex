@@ -1,0 +1,230 @@
+\documentclass[letterpaper,conference]{IEEEtran}
+
+\usepackage[margin=1.14in]{geometry}
+\usepackage{graphicx,url}
+\usepackage{amsthm}
+\usepackage{listings}
+\newtheorem{definition}{Definition}
+
+
+
+
+\begin{document}
+
+\title{Context aware security approach for IoT environments}
+\author{\IEEEauthorblockN{Giovani Ferreira and Caio Silva}
+\IEEEauthorblockA{Universal Internet of Things (UIoT)\\ 
+Tecnology Faculty (FT)\\
+University of Brasília (UFSC)\\
+70910-900 – Brasília, DF – Brazil\\
+giovani.silva@redes.unb.br, caio.silva@redes.unb.br}
+}
+
+\maketitle
+
+\begin{abstract}
+adhaskjdhaksjd
+\end{abstract}
+
+\begin{IEEEkeywords}
+security, quality of context, Internet of things
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+
+Manzoor \cite{manzoor2009quality}
+
+\section{Related Concepts} 
+
+\subsection{Smart Objects}
+Smart Objects are physical/digital autonomous objects augmented with sensing, processing, 
+and network capabilities able to discover new services, new acquaintances, exchange information, 
+connect to external services, exploit other objects’ capabilities, and collaborate toward a 
+commom goal \cite{kortuem2010smart} \cite{atzori2014smart}.
+
+(Ideia: O perigo trazido pelos smart objects que comunicam em muitas tecnologias)
+Smart objects' threats increases as the amount of communication technology it supports.
+
+The threat represented by the Smart Objects increases as the amount of communication technology it supports.
+
+The amount of communication technologies the smart objects support are directly related to the threat they represent.
+
+The amount of communication technologies the Smart Objects have, potentialize the threats they represent.
+
+Smart Objects' threats are potentiated by the amount of their communication technologies.
+
+Smart Objects' threats are potentiated by the amount communication technologies that they support.
+
+Smart object's threats are potentiated by the amount of communication technologies that it supports. 
+A robust device which communicates in several tecnologies have the opportunity to interact with a lot of 
+devices in the IoT network. These interaction and cooperation capabilities results in generation, 
+distribution and manipulation of sensible data, valuable and confidential, which 
+must not be accessible by unauthorized parties. Ensure that access to information and services is granted only to 
+authorized objects is a key part to guarantee a secure system \cite{covington2002context}.
+
+\subsection{Context}
+
+\subsection{Access Control}
+
+The term access control is defined in ISO \cite{ISO27000} as means to ensure that access to anything that 
+has value to the organization is authorized and restricted based on business and security requirements. Shirey 
+\cite{shirey2007internet} generalizes this definition stating that access control is
+a protection of system resources against unauthorized access and the use of 
+system resources is regulated according to a security policy. Also, Venter and Ellof 
+\cite{venter2003taxonomy} completes these definitions stating that access control is a reactive information 
+security technology because it is used to allow or deny access to a system as soon as an access request is 
+made. Whitman \cite{whitman2011principles} says that in general, all access control approaches rely on as the following 
+mechanisms \cite{shirey2007internet} \cite{ISO27000}:
+
+\subsubsection{Identification}
+
+Identification is an act or process whereby an unverified entity - called a supplicant - that seeks access to 
+a resource, presents an identifier to a system so that the system can recognize him and distinguish it from 
+other entities, this identifier must be mapped to one and only one entity within the security 
+domain.
+
+\subsubsection{Authentication}
+
+Authentication is the process of validating a supplicant’s purported identity and a provision of assurance that a 
+claimed characteristic of an entity is correct.
+
+\subsubsection{Authorization}
+
+Authorization is an approval or a process for granting approval to a system 
+entity to access a system resource.
+
+\subsubsection{Accountability}
+Accountability, also known as auditability, ensures that all actions - authorized or unauthorized - of a 
+system entity may be traced uniquely to that entity, which can then be held responsible for 
+its actions. 
+
+In IoT environments, smart objects interact with each other requesting services. These services provides
+information that can be sensible and confidential for the environment. Services with those characteristics
+must have policies to prevent access to data from unauthorized parties.
+
+An IoT access control system must be aware of specific restrictions:
+\begin{enumerate}  
+\item Smart objects are pertinent only in the context of the IoT network that they are inserted
+\item Smart objects can have limited computing and memory capacity, being unable to process large keys or 
+compute heavy cryptography algorithms in an acceptable time.
+\item The data produced in an IoT environment has no owner, only a storage responsible, and can be requested
+by every smart object in the network.
+\item Smart objects can have sleep schedule that does not allow communication during a time period.
+\end{enumerate}
+
+Arduino Uno was selected as test platform, it has an ATmega328 microcontroller, an 8-bit
+processor with a clock speed of 16 MHz, 2 kB of SRAM, and 32 kB of flash memory \cite{arkko2012practical}.
+
+They did the tests with 5 different crypto libraries:
+\begin{enumerate}  
+\item AvrCryptolib
+\item Relic-Toolkit
+\item TinyECC
+\item Wiselib
+\item MatrixSSL
+\end{enumerate}
+
+The performance of encryption with private key was faster for smaller key lengths as was expected. However the
+increase in the execution time was considerable when the key size was 2048 bits \cite{arkko2012practical}:
+
+\begin{table}[htb]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{lll}
+\cline{1-3}
+\begin{tabular}[c]{@{}l@{}}Key Length \\ (bits)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Execution time (ms); \\ Key in SRAM\end{tabular} & \begin{tabular}[c]{@{}l@{}}Execution time (ms); \\ Key in ROM\end{tabular} \\ \cline{1-3}
+64                                                           & 66                                                                          & 70                                                                         \\
+128                                                          & 124                                                                         & 459                                                                        \\
+512                                                          & 25,089                                                                      & 27,348                                                                     \\
+1024                                                         & 199,666                                                                     & 218,367                                                                    \\
+2048                                                         & 1,587,559                                                                   & 1,740,267                                                                 
+\end{tabular}
+\end{table}
+
+Yet, with reasonably long key sizes the execution times are in the seconds, dozens of seconds, or even 
+longer.  For some applications this is too long.  Nevertheless, the authors believe that these algorithms 
+can successfully be employed in small devices for the following reasons:
+
+- With the right selection of algorithms and libraries, the execution times can actually be smaller.  Using the Relic-toolkit
+with the NIST K163 algorithm (roughly equivalent to RSA at 1024 bits) at 0.3 seconds is a good example of this.
+- As discussed in [wiman], in general the power requirements necessary to send or receive messages are far bigger than those
+needed to execute cryptographic operations.  There is no good reason to choose platforms that do not provide sufficient 
+computing power to run the necessary operations.
+- Commercial libraries and the use of full potential for various optimizations will provide a better result than what
+we arrived at in this paper.
+- Using public key cryptography only at the beginning of a session will reduce the per-packet processing 
+times significantly.
+
+\cite{garcia2013security}
+
+New paragraph for: Smart objects can or can not have usual identification like MAC address.
+
+\subsection{Information Security Concepts}
+\subsubsection{Integrity}
+Information has integrity when it is whole, complete, and uncorrupted. The
+integrity of information is threatened when the information is exposed to corruption, damage, destruction, or other 
+disruption of its authentic state. Corruption can occur while
+information is being stored or transmitted \cite{whitman2011principles}.
+
+\subsubsection{Confidentiality}
+
+According to a definition provided by Whitman (2011), the information has confidentiality when it is 
+protected from disclosure or exposure to unauthorized individuals or systems. Confidentiality ensures that only 
+those with the rights and privileges to access information are able to do so \cite{whitman2011principles}.
+
+For ISO standard (2009), confidentiality is a property that information is not made available or disclosed to 
+unauthorized individuals, entities, or processes  \cite{ISO27000}.
+
+\subsubsection{Availability}
+Availability enables authorized users — persons or computer systems — to
+access information without interference or obstruction and to receive it in the required for-
+mat \cite{whitman2011principles}.
+
+Property of being accessible and usable upon demand by an authorized entity \cite{ISO27000}.
+
+The property of a system or a system resource being accessible, or usable or operational 
+upon demand, by an authorized system entity, according to performance specifications for the 
+system; i.e., a system is available if it provides services according to the system design 
+whenever users request them \cite{shirey2007internet}.
+
+\subsubsection{Authenticity}
+Authenticity of information is the quality or state of being genuine or original, rather than a reproduction 
+or fabrication. Information is authentic when it is in the same state in which it was created, placed, 
+stored, or transferred \cite{whitman2011principles}.
+
+Property that an entity is what it claims to be \cite{ISO27000}.
+
+The property of being genuine and able to be verified and be trusted \cite{shirey2007internet}.
+
+\cite{ferro2005bluetooth} \cite{lee2007comparative} \cite{vaughan2004achieving}
+\begin{table}[htb]
+\begin{tabular}{lll}
+\hline
+Technology  & Max Signal Rate & Nominal Range \\ \hline
+Wi-Fi       & 54 Mb/s         & 100m          \\
+Bluetooth   & 1 Mb/s          & 10m           \\
+ZigBee      & 250 Kb/s        & 10 - 100m     \\
+UWB         & 110 Mb/s        & 10m           \\
+WiMax       & 75 Mb/s         & 49Km          \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection{IoT Security}
+
+\section{Proposal}
+ 
+\section{Experiments and Evaluation}
+
+\section{Conclusions and Future work}
+  
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{security}
+
+\end{document}
+
+
