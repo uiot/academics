@@ -1,6 +1,6 @@
 <h1>![](http://i.imgur.com/TaFqVtT.png)<sup><sup>academics</sup></sup><sub><sub><sup></h1></sup></sub></sub>
 <br>
-[![ZenHub](https://img.shields.io/badge/supercharged-zenhub.io-orange.svg)](https://zenhub.io)
+<a href="https://zenhub.com"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png"></a>
 
 <b>What this repository should be?</b><br>
 This repository contains all papers, docs, and proposed papers, academics data, and eventually architecture data and docs.
