@@ -64,7 +64,8 @@ You can see here a list of papers that are being published or in publishment pro
 Is about a list of papers under "construction"
 
 * An Internet of Things context-aware knowledge layer for smart objects.
-* Proposal for the Adoption of Microservices in the Internet of Things
+* Proposal for the Adoption of Microservices in the Internet of Things.
+* Case study for an INternet of Things semantic gateway.
 
 ### Aditional Information
 
