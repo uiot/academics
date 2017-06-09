@@ -57,8 +57,7 @@ You can access on-line our Published Papers as Additional Academic Data,
 
 You can see here a list of papers that are being published or in publishment progress.
 
-* UIoT's proposal of comparsion of inteligent sensor systems
-* UIoT's paper about context aware systems
+* Applied Redundancy Protocols of Internet of Things Gateways.
 
 ### Papers under Construction
 
