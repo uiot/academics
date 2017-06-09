@@ -1,12 +1,7 @@
-<h4><img src="http://i.imgur.com/Ftmda0f.png"/> academics</h4>
-<br>
+[![Logo](http://imgur.com/iQU8c9L.png)]() Academics
+---------------------------------------------------
 
 [![We Use ZenHub](https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png)](https://zenhub.com) [![License: CC BY-NC 4.0](http://i.imgur.com/GShlrY0.png)](http://creativecommons.org/licenses/by-nc/4.0/)
-
-<hr>
-
-What is UIoT
--------------
 
 UIoT is an open-source middleware dedicated to managing services in Internet-of-Things environments. It is designed to transparently allow control of any component able to communicate information. 
 
