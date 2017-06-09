@@ -51,6 +51,7 @@ You can access on-line our Published Papers as Additional Academic Data,
 
 * [Design and Evaluation of a Services Interface for the Internet of Things](http://link.springer.com/article/10.1007/s11277-015-3168-6)
 * [Evaluation of an Arduino-based IoT Person Counter](http://www.scitepress.org/DigitalLibrary/PublicationsDetail.aspx?ID=DIzbUzEPdV8=&t=1)
+* More Published papers will be added on the list.
 
 ### Papers being Published
 
@@ -63,14 +64,7 @@ You can see here a list of papers that are being published or in publishment pro
 
 Is about a list of papers under "construction"
 
-* New Security Approach for IoT Networks
-* Some Papers about Specific Hardware Use-Cases for a Top-Level and Abstract IoT Architecture (Presence Sensor, Humidity Sensor, Etc)
-* UIoT's Communication Layer Paper
-* UIoT's Application Layer Use-Case, UIoT Network Management System - CMS
-* Machine Learning in a Top-Level IoT Network
-* IoT Big Data Approach, UIoT
-* UIoT's Execution Layer, Hardware Abstraction Concern.
-* Others planned but not listed
+* An Internet of Things context-aware knowledge layer for smart objects.
 
 ### Aditional Information
 
@@ -78,5 +72,7 @@ Is about a list of papers under "construction"
 * Want know more about us? Enter contact at contact@uiot.org
 * Also you can access University of Brasília's Website [by clicking here](http://unb.br)
 
-
+<br>
+<br>
+<img align="right" src="http://imgur.com/l5hOjj4.gif">
 
